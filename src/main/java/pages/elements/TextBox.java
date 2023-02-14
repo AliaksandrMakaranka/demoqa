@@ -70,7 +70,7 @@ public class TextBox {
     return driver.findElement(resultCurrentAddress).getText();
   }
 
-  public String setResultPermanentAddress() {
+  public String getResultPermanentAddress() {
     return driver.findElement(resultPermanentAddress).getText();
   }
 
