@@ -34,11 +34,11 @@ public class WebTables {
 
   //register form after push addNewRecordButton
   private final By regFirstName = By.id("firstName");
-  private final By regLastName = By.id("lastName-wrapper");
-  private final By regUserEmail = By.id("userEmail-wrapper");
-  private final By regAge = By.id("age-wrapper");
-  private final By regSalary = By.id("salary-wrapper");
-  private final By regDepartment = By.id("department-wrapper");
+  private final By regLastName = By.id("lastName");
+  private final By regUserEmail = By.id("userEmail");
+  private final By regAge = By.id("age");
+  private final By regSalary = By.id("salary");
+  private final By regDepartment = By.id("department");
   private final By regSubmitButton = By.id("submit");
 
   //todo add prev and next button, page counter , rows (base 10)
@@ -104,19 +104,19 @@ public class WebTables {
   }
 
   public void setRegUserEmail(String userEmail){
-    driver.findElement(regUserEmail).sendKeys();
+    driver.findElement(regUserEmail).sendKeys(userEmail);
   }
 
-  public void setRegAge(int age){
-      driver.findElement(regAge).sendKeys();
+  public void setRegAge(String age){
+      driver.findElement(regAge).sendKeys(age);
   }
 
-  public void setRegSalary(int salary) {
-    driver.findElement(regSalary).sendKeys();
+  public void setRegSalary(String salary) {
+    driver.findElement(regSalary).sendKeys(salary);
   }
 
   public void setRegDepartment(String department) {
-    driver.findElement(regDepartment).sendKeys();
+    driver.findElement(regDepartment).sendKeys(department);
   }
 
   public void setRegSubmitButton() {

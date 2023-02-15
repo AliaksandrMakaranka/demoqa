@@ -4,16 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="radio button method done&#10;need refactor for solve problem with duplicate code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="refactor code add driver factory">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +85,7 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TextBoxTest.fillAllFieldWithMail">
+  <component name="RunManager" selected="JUnit.WebTablesTest.addNewUser">
     <configuration name="RadioButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
@@ -155,7 +149,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextBoxTest.fillAllFieldsWithCorrectEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTablesTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -164,8 +158,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.TextBoxTest" />
-      <option name="METHOD_NAME" value="fillAllFieldsWithCorrectEmailTest" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
+      <option name="METHOD_NAME" value="addNewUser" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +167,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TextBoxTest.fillAllFieldWithMail" />
+        <item itemvalue="JUnit.WebTablesTest.addNewUser" />
         <item itemvalue="JUnit.RadioButtonTest.pushYesRadioButtonTest" />
+        <item itemvalue="JUnit.TextBoxTest.fillAllFieldWithMail" />
         <item itemvalue="JUnit.RadioButtonTest.pushImpressiveButtonTest" />
         <item itemvalue="JUnit.RadioButtonTest" />
-        <item itemvalue="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +219,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676356432043</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="refactor code add driver factory">
+      <created>1676492769695</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1676492769695</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -244,6 +245,7 @@
     <MESSAGE value="first test, performance check" />
     <MESSAGE value="add some methods" />
     <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
-    <option name="LAST_COMMIT_MESSAGE" value="radio button method done&#10;need refactor for solve problem with duplicate code" />
+    <MESSAGE value="refactor code add driver factory" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code add driver factory" />
   </component>
 </project>
