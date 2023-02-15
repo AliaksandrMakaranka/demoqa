@@ -1,27 +1,25 @@
 package pages.elements;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.DriverFactory;
 
 class RadioButtonTest {
-  private static final String MAIN_PAGE = "https://demoqa.com/";
+
   WebDriver driver;
   RadioButton radioButton;
+
+
   @BeforeEach
   public void setUp() {
-    WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
-    driver.get(MAIN_PAGE);
-    driver.manage().window().maximize();
+    ChromeDriver driver = DriverFactory.create();
     radioButton = new RadioButton(driver);
-    radioButton.setElementsLocator();
+    radioButton.setElementsLocator();//TODO duplicate line
     radioButton.setRadioButton();
-    //duplicate code
   }
 
   @Test
@@ -41,9 +39,10 @@ class RadioButtonTest {
     Assertions.assertThat(newResultButton).isNotNull().isNotEmpty();
     //duplicate code
   }
+
   @AfterEach
   public void teardown() {
-    if(driver != null) {
+    if (driver != null) {
       driver.close();
       driver.quit();
     }

@@ -5,6 +5,13 @@ import org.openqa.selenium.WebDriver;
 
 public class TextBox {
 
+  private static WebDriver driver;
+
+
+  public TextBox(WebDriver driver) {
+    this.driver = driver;
+  }
+
   //locators for entry menu elements
   private final By elementsLocator = By.xpath(
       "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
@@ -23,13 +30,7 @@ public class TextBox {
   private final By resultCurrentAddress = By.xpath("//p[@id=\"currentAddress\"]");
   private final By resultPermanentAddress = By.xpath("//p[@id=\"permanentAddress\"]");
 
-
-  private final WebDriver driver;
-
-  public TextBox(WebDriver driver) {
-    this.driver = driver;
-  }
-
+  //setters
   public void setElementsLocator() {
     driver.findElement(elementsLocator).click();
   }
@@ -58,6 +59,7 @@ public class TextBox {
     driver.findElement(submitButton).click();
   }
 
+  //getters
   public String getResultName() {
     return driver.findElement(resultName).getText();
   }
