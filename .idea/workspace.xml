@@ -4,12 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="prepare git ignore">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="radio button method done&#10;need refactor for solve problem with duplicate code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/MainPage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,12 +23,17 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -63,6 +72,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;last_directory_selection&quot;: &quot;/home/zac/IdeaProjects/demoqa/src/test/java&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -72,12 +82,80 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="pages" />
+      <recent name="pages.elements" />
+      <recent name="" />
+    </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="TextBoxTest.fillAllFieldsWithCorrectDataTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TextBoxTest.fillAllFieldWithMail">
+    <configuration name="RadioButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioButtonTest.pushImpressiveButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
+      <option name="METHOD_NAME" value="pushImpressiveButtonTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RadioButtonTest.pushYesRadioButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
+      <option name="METHOD_NAME" value="pushYesRadioButtonTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextBoxTest.fillAllFieldWithMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value=".*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.TextBoxTest" />
+      <option name="METHOD_NAME" value="fillAllFieldWithMail" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TextBoxTest.fillAllFieldsWithCorrectEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -87,7 +165,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
       <option name="MAIN_CLASS_NAME" value="pages.elements.TextBoxTest" />
-      <option name="METHOD_NAME" value="fillAllFieldsWithCorrectDataTest" />
+      <option name="METHOD_NAME" value="fillAllFieldsWithCorrectEmailTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -95,7 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TextBoxTest.fillAllFieldsWithCorrectDataTest" />
+        <item itemvalue="JUnit.TextBoxTest.fillAllFieldWithMail" />
+        <item itemvalue="JUnit.RadioButtonTest.pushYesRadioButtonTest" />
+        <item itemvalue="JUnit.RadioButtonTest.pushImpressiveButtonTest" />
+        <item itemvalue="JUnit.RadioButtonTest" />
+        <item itemvalue="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest" />
       </list>
     </recent_temporary>
   </component>
@@ -122,7 +204,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676320035203</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="first test, performance check">
+      <created>1676344886190</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1676344886190</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add some methods">
+      <created>1676351191476</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1676351191477</updated>
+    </task>
+    <task id="LOCAL-00005" summary="radio button method done&#10;need refactor for solve problem with duplicate code">
+      <created>1676356432043</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1676356432043</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,6 +241,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="prepare git ignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="prepare git ignore" />
+    <MESSAGE value="first test, performance check" />
+    <MESSAGE value="add some methods" />
+    <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
+    <option name="LAST_COMMIT_MESSAGE" value="radio button method done&#10;need refactor for solve problem with duplicate code" />
   </component>
 </project>

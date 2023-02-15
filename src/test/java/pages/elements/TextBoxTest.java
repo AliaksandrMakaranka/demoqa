@@ -1,24 +1,20 @@
 package pages.elements;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import pages.DriverFactory;
 
 public class TextBoxTest {
-
-  private static final String MAIN_PAGE = "https://demoqa.com/";
   WebDriver driver;
   TextBox textBox;
 
   @BeforeEach
-  public void setUp() {
-    WebDriverManager.chromedriver().setup();
-    driver = new ChromeDriver();
-    driver.get(MAIN_PAGE);
-    driver.manage().window().maximize();
+  void setUp() {
+    ChromeDriver driver = DriverFactory.create();
     textBox = new TextBox(driver);
     textBox.setElementsLocator();
     textBox.setTextBox();
@@ -85,4 +81,13 @@ public class TextBoxTest {
     Assertions.assertThat(newResultName).containsAnyOf(".wq");
     Assertions.assertThat(newResultMail).containsAnyOf(".wq");
   }
+
+  @AfterEach
+  public void teardown() {
+    if (driver != null) {
+      driver.close();
+      driver.quit();
+    }
+  }
+
 }
