@@ -4,13 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="rename xpath id was wrong">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/Buttons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="Code sava">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/Buttons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +88,21 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ButtonsTest.doubleClickTest">
+    <configuration name="ButtonsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ButtonsTest.doubleClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
@@ -101,6 +114,38 @@
       <option name="PACKAGE_NAME" value="pages.elements" />
       <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
       <option name="METHOD_NAME" value="doubleClickTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButtonsTest.oneClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
+      <option name="METHOD_NAME" value="oneClickTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ButtonsTest.rightClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
+      <option name="METHOD_NAME" value="rightClickTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,61 +167,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesTest.editAldenFromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="editAldenFromTablesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesTest.notFoundUserTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="notFoundUserTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesTest.removeVegafromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="removeVegafromTablesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.ButtonsTest.doubleClickTest" />
+        <item itemvalue="JUnit.ButtonsTest.oneClickTest" />
+        <item itemvalue="JUnit.ButtonsTest.rightClickTest" />
+        <item itemvalue="JUnit.ButtonsTest" />
         <item itemvalue="JUnit.WebTablesTest.addNewUser" />
-        <item itemvalue="JUnit.WebTablesTest.notFoundUserTest" />
-        <item itemvalue="JUnit.WebTablesTest.editAldenFromTablesTest" />
-        <item itemvalue="JUnit.WebTablesTest.removeVegafromTablesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -238,7 +235,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676495744721</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Code sava">
+      <created>1676660972793</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676660972793</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -259,6 +263,12 @@
     <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
     <MESSAGE value="refactor code add driver factory" />
     <MESSAGE value="rename xpath id was wrong" />
-    <option name="LAST_COMMIT_MESSAGE" value="rename xpath id was wrong" />
+    <MESSAGE value="Code sava" />
+    <option name="LAST_COMMIT_MESSAGE" value="Code sava" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pages.elements.*</FILTER>
+    </SUITE>
   </component>
 </project>

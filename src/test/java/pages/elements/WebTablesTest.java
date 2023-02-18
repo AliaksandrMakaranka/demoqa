@@ -24,7 +24,6 @@ class WebTablesTest {
     @Test
 //  @RepeatedTest(2)
   public void addNewUser() {
-    //add faker
     var expectedUser = createFakeUser();
     var userMail = expectedUser.getEmail();
 
@@ -53,7 +52,7 @@ class WebTablesTest {
         faker.name().lastName(),
         faker.internet().emailAddress(),
         rnd.nextInt(18, 66),
-        rnd.nextInt(1000, 50000),
+        rnd.nextInt(1000, 50001),
         faker.team().name()
         );
   }
