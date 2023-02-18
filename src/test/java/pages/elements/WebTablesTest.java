@@ -3,31 +3,43 @@ package pages.elements;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 import com.github.javafaker.Faker;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Random;
 import org.assertj.core.api.Assertions;
+import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.DriverFactory;
 
 class WebTablesTest {
+
   WebTables webTables;
+  WebDriver driver;
+  private static final String MAIN_PAGE = "https://demoqa.com/";//todo one constant for all methods
+
+  @BeforeAll
+  public static void setUpClass() {
+    WebDriverManager.chromedriver().setup();
+  }
 
   @BeforeEach
   void setUp() {
-    ChromeDriver driver = DriverFactory.create();
+    driver = new ChromeDriver();
+    driver.get(MAIN_PAGE);
     webTables = new WebTables(driver);
     webTables.setElementsLocator();
     webTables.setWebTables();
   }
 
-    @Test
+  @Test
 //  @RepeatedTest(2)
   public void addNewUser() {
     var expectedUser = createFakeUser();
     var userMail = expectedUser.getEmail();
 
-    assertDoesNotThrow(()-> addUser(expectedUser), "Input user was: " + expectedUser);
+    assertDoesNotThrow(() -> addUser(expectedUser), "Input user was: " + expectedUser);
 
     var actualUser = assertDoesNotThrow(() -> webTables.getUser(userMail),
         "some error message");
@@ -48,13 +60,13 @@ class WebTablesTest {
     Random rnd = new Random();
     Faker faker = new Faker();
     return new User(
-        faker.name().firstName() ,
+        faker.name().firstName(),
         faker.name().lastName(),
         faker.internet().emailAddress(),
         rnd.nextInt(18, 66),
         rnd.nextInt(1000, 50001),
         faker.team().name()
-        );
+    );
   }
 
 
@@ -90,4 +102,11 @@ class WebTablesTest {
     Assertions.assertThat(notUser).isNotEmpty().isNotNull().contains("No rows found");
   }
 
+  @AfterEach
+  void tearDown() {
+    if (driver != null) {
+      driver.close();
+      driver.quit();
+    }
+  }
 }

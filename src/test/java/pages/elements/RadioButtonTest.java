@@ -1,23 +1,30 @@
 package pages.elements;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.DriverFactory;
 
 class RadioButtonTest {
+
+  private static final String MAIN_PAGE = "https://demoqa.com/";//todo one constant for all methods
 
   WebDriver driver;
   RadioButton radioButton;
 
+  @BeforeAll
+  public static void setUpClass() {
+    WebDriverManager.chromedriver().setup();
+  }
 
   @BeforeEach
   public void setUp() {
-    ChromeDriver driver = DriverFactory.create();
-    radioButton = new RadioButton(driver);
+    driver = new ChromeDriver();
+    driver.get(MAIN_PAGE);
     radioButton.setElementsLocator();//TODO duplicate line
     radioButton.setRadioButton();
   }

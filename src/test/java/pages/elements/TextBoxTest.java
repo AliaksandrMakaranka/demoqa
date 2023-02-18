@@ -1,20 +1,29 @@
 package pages.elements;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.DriverFactory;
 
 public class TextBoxTest {
+
+  private static final String MAIN_PAGE = "https://demoqa.com/";//todo one constant for all methods
   WebDriver driver;
   TextBox textBox;
 
+  @BeforeAll
+  public static void setUpClass() {
+    WebDriverManager.chromedriver().setup();
+  }
+
   @BeforeEach
   void setUp() {
-    ChromeDriver driver = DriverFactory.create();
+    driver = new ChromeDriver();
+    driver.get(MAIN_PAGE);
     textBox = new TextBox(driver);
     textBox.setElementsLocator();
     textBox.setTextBox();
@@ -30,6 +39,7 @@ public class TextBoxTest {
 
     String newResultEmail = textBox.getResultEmail();
     Assertions.assertThat(newResultEmail).isNotNull().isNotEmpty().containsAnyOf("@", ".");
+    //todo
     //add min max length for email
   }
 
