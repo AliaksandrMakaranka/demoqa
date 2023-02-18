@@ -4,9 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="refactor code add driver factory">
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add buttons class + test&#10;remove commits form code">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/Links.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Helper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,71 +91,72 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTablesTest.addNewUser">
-    <configuration name="RadioButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WebTablesTest.removeUserVegaFromTablesTest">
+    <configuration name="ButtonsTest.doubleClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="RadioButtonTest.pushImpressiveButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value=".*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
-      <option name="METHOD_NAME" value="pushImpressiveButtonTest" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
+      <option name="METHOD_NAME" value="doubleClickTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="RadioButtonTest.pushYesRadioButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinksTest.createCode201Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.RadioButtonTest" />
-      <option name="METHOD_NAME" value="pushYesRadioButtonTest" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
+      <option name="METHOD_NAME" value="createCode201Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TextBoxTest.fillAllFieldWithMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinksTest.createStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value=".*" />
+          <option name="PATTERN" value="pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.TextBoxTest" />
-      <option name="METHOD_NAME" value="fillAllFieldWithMail" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
+      <option name="METHOD_NAME" value="createStatusCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="LinksTest.openNewWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
+      <option name="METHOD_NAME" value="openNewWindowTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesTest.removeUserVegaFromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -159,7 +166,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
       <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="METHOD_NAME" value="removeUserVegaFromTablesTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -167,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebTablesTest.addNewUser" />
-        <item itemvalue="JUnit.RadioButtonTest.pushYesRadioButtonTest" />
-        <item itemvalue="JUnit.TextBoxTest.fillAllFieldWithMail" />
-        <item itemvalue="JUnit.RadioButtonTest.pushImpressiveButtonTest" />
-        <item itemvalue="JUnit.RadioButtonTest" />
+        <item itemvalue="JUnit.WebTablesTest.removeUserVegaFromTablesTest" />
+        <item itemvalue="JUnit.ButtonsTest.doubleClickTest" />
+        <item itemvalue="JUnit.LinksTest.createStatusCode" />
+        <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
+        <item itemvalue="JUnit.LinksTest.createCode201Test" />
       </list>
     </recent_temporary>
   </component>
@@ -226,7 +233,28 @@
       <option name="project" value="LOCAL" />
       <updated>1676492769695</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rename xpath id was wrong">
+      <created>1676495744721</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1676495744721</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Code sava">
+      <created>1676660972793</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1676660972793</updated>
+    </task>
+    <task id="LOCAL-00009" summary="add buttons class + test&#10;remove commits form code">
+      <created>1676742326994</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1676742326994</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -246,6 +274,14 @@
     <MESSAGE value="add some methods" />
     <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
     <MESSAGE value="refactor code add driver factory" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code add driver factory" />
+    <MESSAGE value="rename xpath id was wrong" />
+    <MESSAGE value="Code sava" />
+    <MESSAGE value="add buttons class + test&#10;remove commits form code" />
+    <option name="LAST_COMMIT_MESSAGE" value="add buttons class + test&#10;remove commits form code" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>pages.elements.*</FILTER>
+    </SUITE>
   </component>
 </project>

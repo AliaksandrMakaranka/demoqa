@@ -29,6 +29,9 @@ public class WebTables {
   //search line
   private final By searchBox = By.xpath("//input[@placeholder=\"Type to search\"]");
 
+  //no rows found
+  private final By noRowsFound = By.xpath("//div[@class=\"rt-noData\"]");
+
   //add button
   private final By addNewRecordButton = By.xpath("//button[@id=\"addNewRecordButton\"]");
 
@@ -40,6 +43,14 @@ public class WebTables {
   private final By regSalary = By.id("salary");
   private final By regDepartment = By.id("department");
   private final By regSubmitButton = By.id("submit");
+
+  //lines in tables
+  private final By firstLine = By.xpath("(//div[@class=\"rt-tr-group\"])[1]");
+  /**
+   * fourthLine time mok for check new user default 3
+   * todo search last add new user
+   */
+  private final By fourthLine = By.xpath("(//div[@class=\"rt-tr-group\"])[4]");
 
   //todo add prev and next button, page counter , rows (base 10)
 //setters
@@ -87,8 +98,9 @@ public class WebTables {
     driver.findElement(actionDelete).click();
   }
 
-  public void setSearchBox() {
-    driver.findElement(searchBox).click();
+  public void setSearchBox(String search) {
+    driver.findElement(searchBox).clear();
+    driver.findElement(searchBox).sendKeys(search);
   }
 
   public void setAddNewRecordButton() {
@@ -96,26 +108,32 @@ public class WebTables {
   }
 
   public void setRegFirstName(String firstName) {
+    driver.findElement(regFirstName).clear();
     driver.findElement(regFirstName).sendKeys(firstName);
   }
 
   public void setRegLastName(String lastName){
+    driver.findElement(regLastName).clear();
     driver.findElement(regLastName).sendKeys(lastName);
   }
 
-  public void setRegUserEmail(String userEmail){
+  public void setRegUserEmail(String userEmail) {
+    driver.findElement(regUserEmail).clear();
     driver.findElement(regUserEmail).sendKeys(userEmail);
   }
 
-  public void setRegAge(String age){
-      driver.findElement(regAge).sendKeys(age);
+  public void setRegAge(String age) {
+    driver.findElement(regAge).clear();
+    driver.findElement(regAge).sendKeys(age);
   }
 
   public void setRegSalary(String salary) {
+    driver.findElement(regSalary).clear();
     driver.findElement(regSalary).sendKeys(salary);
   }
 
   public void setRegDepartment(String department) {
+    driver.findElement(regDepartment).clear();
     driver.findElement(regDepartment).sendKeys(department);
   }
 
@@ -123,4 +141,25 @@ public class WebTables {
     driver.findElement(regSubmitButton).click();
   }
 
+  //getters
+
+  public String getFirstLine() {
+    return driver.findElement(firstLine).getText();
+  }
+  public String getFourthLine() {
+    return driver.findElement(fourthLine).getText();
+  }
+
+  public String getNoRowsFound() {
+    return driver.findElement(noRowsFound).getText();
+  }
+
+  public String getUser(String userMail) {
+    //some code for return usermail
+    //вернут ьвсю строку по задоному эмэйлу
+    //TODO
+    return driver.findElement(By.cssSelector(".rt-tr-group .rt-td:nth-child(4)")).getText();
+  }
 }
+
+
