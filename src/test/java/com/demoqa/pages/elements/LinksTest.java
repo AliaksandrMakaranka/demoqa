@@ -1,5 +1,7 @@
-package pages.elements;
+package com.demoqa.pages.elements;
 
+import com.demoqa.pages.Helper;
+import com.demoqa.pages.elements.Links;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.List;
@@ -12,7 +14,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import pages.Helper;
 
 class LinksTest {
 
@@ -37,15 +38,22 @@ class LinksTest {
   }
 
   @Test
-  public void createStatusCode() {
-    links.setHomeLocatorNewWindow();
-
-    //TODO javascript:void(0)  make code status
+  public void createStatusCode() throws IOException {
+    List<WebElement> list = driver.findElements(By.tagName("a"));
+    for (WebElement element : list) {
+      System.out.println(element);
+      String url = element.getAttribute("href");
+      Helper helper = new Helper();
+      helper.statusCode(url);//fixme
+    }
   }
 
   @Test
-  public void openNewWindowTest() throws IOException {
-    links.setHomeLocatorNewWindow();
+  public void openNewWindowTest() {
+    String newWindowURL = driver.findElement(By.linkText("Home")).getAttribute("href");
+    //todo
+    driver.navigate().to(newWindowURL);
+
   }
 
   @AfterEach
@@ -59,6 +67,6 @@ class LinksTest {
 
   @AfterAll
   public static void tearDownClass() {
-    System.out.println("After all");
+    System.out.println("After all disabled");
   }
 }

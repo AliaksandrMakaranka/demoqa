@@ -1,4 +1,4 @@
-package pages.elements;
+package com.demoqa.pages.elements;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

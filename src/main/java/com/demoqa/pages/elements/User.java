@@ -1,4 +1,4 @@
-package pages.elements;
+package com.demoqa.pages.elements;
 
 import com.github.javafaker.Faker;
 

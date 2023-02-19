@@ -5,11 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/BrokenLinksImages.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/BrokenLinksImagesTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/Buttons.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/Links.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/Links.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/RadioButton.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/TextBox.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/WebTables.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/Helper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/ButtonsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/LinksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/RadioButtonTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,37 +95,22 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.demoqa.pages.elements" />
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.LinksTest.createStatusCode">
-    <configuration name="ButtonsTest.doubleClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BrokenLinksImagesTest.brokenImageTest">
+    <configuration name="BrokenLinksImagesTest.brokenImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.ButtonsTest" />
-      <option name="METHOD_NAME" value="doubleClickTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinksTest.createCode201Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
-      <option name="METHOD_NAME" value="createCode201Test" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.BrokenLinksImagesTest" />
+      <option name="METHOD_NAME" value="brokenImageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -130,6 +126,22 @@
       </extension>
       <option name="PACKAGE_NAME" value="pages.elements" />
       <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
+      <option name="METHOD_NAME" value="createStatusCode" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LinksTest.createStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.LinksTest" />
       <option name="METHOD_NAME" value="createStatusCode" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
@@ -170,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.BrokenLinksImagesTest.brokenImageTest" />
+        <item itemvalue="JUnit.LinksTest.createStatusCode (1)" />
+        <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
         <item itemvalue="JUnit.LinksTest.createStatusCode" />
         <item itemvalue="JUnit.WebTablesTest.removeUserVegaFromTablesTest" />
-        <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
-        <item itemvalue="JUnit.ButtonsTest.doubleClickTest" />
-        <item itemvalue="JUnit.LinksTest.createCode201Test" />
       </list>
     </recent_temporary>
   </component>
