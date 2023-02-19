@@ -26,6 +26,7 @@ class ButtonsTest {
     driver = new ChromeDriver();
     buttons = new Buttons(driver);
     driver.get(MAIN_PAGE);
+    driver.manage().window().maximize();
     buttons.setElementsLocator();
     buttons.setButtons();
   }

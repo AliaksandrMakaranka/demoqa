@@ -25,6 +25,8 @@ class RadioButtonTest {
   public void setUp() {
     driver = new ChromeDriver();
     driver.get(MAIN_PAGE);
+    driver.manage().window().maximize();
+    radioButton = new RadioButton(driver);
     radioButton.setElementsLocator();//TODO duplicate line
     radioButton.setRadioButton();
   }

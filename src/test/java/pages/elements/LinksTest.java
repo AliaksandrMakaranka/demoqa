@@ -30,6 +30,7 @@ class LinksTest {
   public void setUp() {
     driver = new ChromeDriver();
     driver.get(MAIN_PAGE);
+    driver.manage().window().maximize();
     links = new Links(driver);
     links.setElementsLocator();
     links.setLinks();
@@ -44,21 +45,15 @@ class LinksTest {
 
   @Test
   public void openNewWindowTest() throws IOException {
-    driver.get("https://demoqa.com/links");
-    Helper helper = new Helper();
-    List<WebElement> link = driver.findElements(By.tagName("a"));
-    for (int i = 0; i < link.size(); i++) {
-      WebElement element = link.get(i);
-      String url = element.getAttribute("href");
-      helper.statusCode(url);
-    }
+    links.setHomeLocatorNewWindow();
   }
 
   @AfterEach
   void tearDown() {
     if (driver != null) {
-      driver.close();
-      driver.quit();
+//      driver.close();
+//      driver.quit();
+      System.out.println("@AfterEach disabled");
     }
   }
 
