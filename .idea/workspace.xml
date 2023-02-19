@@ -4,23 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/BrokenLinksImages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/BrokenLinksImagesTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add BrokenLinksImages and refactor package">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/DynamicProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/UploadAndDownload.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/DynamicPropertiesTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/UploadAndDownloadTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/Buttons.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/Buttons.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/Links.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/Links.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/RadioButton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/RadioButton.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/TextBox.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/TextBox.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pages/elements/WebTables.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/WebTables.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/Helper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/Helper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/ButtonsTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/LinksTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/RadioButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -99,7 +88,7 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BrokenLinksImagesTest.brokenImageTest">
+  <component name="RunManager" selected="JUnit.UploadAndDownloadTest.upLoadTest">
     <configuration name="BrokenLinksImagesTest.brokenImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
@@ -116,17 +105,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinksTest.createStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DynamicPropertiesTest.setElementsLocator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
-      <option name="METHOD_NAME" value="createStatusCode" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.DynamicPropertiesTest" />
+      <option name="METHOD_NAME" value="setElementsLocator" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -164,17 +153,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesTest.removeUserVegaFromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UploadAndDownloadTest.upLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="removeUserVegaFromTablesTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.UploadAndDownloadTest" />
+      <option name="METHOD_NAME" value="upLoadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -182,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UploadAndDownloadTest.upLoadTest" />
+        <item itemvalue="JUnit.DynamicPropertiesTest.setElementsLocator" />
         <item itemvalue="JUnit.BrokenLinksImagesTest.brokenImageTest" />
         <item itemvalue="JUnit.LinksTest.createStatusCode (1)" />
         <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
-        <item itemvalue="JUnit.LinksTest.createStatusCode" />
-        <item itemvalue="JUnit.WebTablesTest.removeUserVegaFromTablesTest" />
       </list>
     </recent_temporary>
   </component>
@@ -269,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676759802330</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add BrokenLinksImages and refactor package">
+      <created>1676775369337</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1676775369337</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -293,7 +289,8 @@
     <MESSAGE value="Code sava" />
     <MESSAGE value="add buttons class + test&#10;remove commits form code" />
     <MESSAGE value="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker" />
+    <MESSAGE value="add BrokenLinksImages and refactor package" />
+    <option name="LAST_COMMIT_MESSAGE" value="add BrokenLinksImages and refactor package" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
