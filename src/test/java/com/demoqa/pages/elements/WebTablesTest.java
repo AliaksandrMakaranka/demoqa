@@ -1,7 +1,9 @@
-package pages.elements;
+package com.demoqa.pages.elements;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
+import com.demoqa.pages.elements.User;
+import com.demoqa.pages.elements.WebTables;
 import com.github.javafaker.Faker;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Random;

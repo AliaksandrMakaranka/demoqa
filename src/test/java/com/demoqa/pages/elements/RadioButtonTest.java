@@ -1,5 +1,6 @@
-package pages.elements;
+package com.demoqa.pages.elements;
 
+import com.demoqa.pages.elements.RadioButton;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
