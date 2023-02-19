@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add buttons class + test&#10;remove commits form code">
-      <change afterPath="$PROJECT_DIR$/src/main/java/pages/elements/Links.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/Helper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/DriverFactory.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/ButtonsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/LinksTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/RadioButtonTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/TextBoxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pages/elements/WebTablesTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +87,7 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTablesTest.removeUserVegaFromTablesTest">
+  <component name="RunManager" selected="JUnit.LinksTest.createStatusCode">
     <configuration name="ButtonsTest.doubleClickTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
@@ -174,10 +170,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebTablesTest.removeUserVegaFromTablesTest" />
-        <item itemvalue="JUnit.ButtonsTest.doubleClickTest" />
         <item itemvalue="JUnit.LinksTest.createStatusCode" />
+        <item itemvalue="JUnit.WebTablesTest.removeUserVegaFromTablesTest" />
         <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
+        <item itemvalue="JUnit.ButtonsTest.doubleClickTest" />
         <item itemvalue="JUnit.LinksTest.createCode201Test" />
       </list>
     </recent_temporary>
@@ -254,7 +250,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676742326994</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker">
+      <created>1676759802330</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1676759802330</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -277,7 +280,8 @@
     <MESSAGE value="rename xpath id was wrong" />
     <MESSAGE value="Code sava" />
     <MESSAGE value="add buttons class + test&#10;remove commits form code" />
-    <option name="LAST_COMMIT_MESSAGE" value="add buttons class + test&#10;remove commits form code" />
+    <MESSAGE value="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker" />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

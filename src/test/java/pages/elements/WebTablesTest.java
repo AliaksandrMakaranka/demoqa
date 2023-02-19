@@ -28,6 +28,7 @@ class WebTablesTest {
   void setUp() {
     driver = new ChromeDriver();
     driver.get(MAIN_PAGE);
+    driver.manage().window().maximize();
     webTables = new WebTables(driver);
     webTables.setElementsLocator();
     webTables.setWebTables();
