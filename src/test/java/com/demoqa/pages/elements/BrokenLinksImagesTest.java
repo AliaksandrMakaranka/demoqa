@@ -28,7 +28,6 @@ class BrokenLinksImagesTest {
     driver = new ChromeDriver();
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();
-//    DriverFactory.create();
     blImages = new BrokenLinksImages(driver);
     blImages.setElementsLocator();
     blImages.setBrokenLinksImages();

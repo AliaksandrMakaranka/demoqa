@@ -26,5 +26,4 @@ public class BrokenLinksImages {
   public void setBrokenLinksImages() {
     driver.findElement(brokenLinksImages).click();
   }
-
 }

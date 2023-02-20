@@ -49,7 +49,7 @@ class LinksTest {
   }
 
   @Test
-  public void openNewWindowTest() {
+  public void openNewWindowTest() {//status code
     String newWindowURL = driver.findElement(By.linkText("Home")).getAttribute("href");
     //todo
     driver.navigate().to(newWindowURL);
