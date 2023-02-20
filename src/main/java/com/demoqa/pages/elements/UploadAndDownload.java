@@ -26,12 +26,17 @@ public class UploadAndDownload {
   public String getResultOfUpload() {
     return driver.findElement(resultOfUpload).getText();
   }
+
   public void setElementsLocator() {
     driver.findElement(elementsLocator).click();
   }
 
   public void setDownloadButton() {
     driver.findElement(downloadButton).click();
+  }
+
+  public void getDownloadButtonMessage() {
+    driver.findElement(downloadButton).getCssValue("innerHTML").toString();
   }
 
 

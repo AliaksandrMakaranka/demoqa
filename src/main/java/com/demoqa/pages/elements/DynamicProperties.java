@@ -1,7 +1,9 @@
 package com.demoqa.pages.elements;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
 public class DynamicProperties {
 
@@ -14,7 +16,12 @@ public class DynamicProperties {
       "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
 
   private final By dynamicProperties = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Upload and Download\")]");
+      "//span[@class=\"text\" and contains(text(), \"Dynamic Properties\")]");
+
+  private final By willEnableFiveSeconds = By.id("enableAfter");
+  private final By colorChangeAfterFiveSeconds = By.id("colorChange");
+  private final By visibleAfterFiveSeconds = By.id("visibleAfter");
+
 
   //setter
   public void setElementsLocator() {
@@ -22,8 +29,15 @@ public class DynamicProperties {
   }
 
   public void setDynamicProperties() {
-    driver.findElement(dynamicProperties).click();
+    WebElement element = driver.findElement(dynamicProperties);
+    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
   }
+
+  public void setWillEnableFiveSeconds() {
+
+  }
+
+
 
 
 }
