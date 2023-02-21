@@ -6,6 +6,10 @@ import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.List;
+import org.apache.hc.client5.http.classic.HttpClient;
+import org.apache.hc.client5.http.classic.methods.HttpGet;
+import org.apache.hc.client5.http.impl.classic.HttpClientBuilder;
+import org.apache.hc.core5.http.HttpResponse;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
@@ -36,33 +40,35 @@ class BrokenLinksImagesTest {
   @Test
   public void brokenImageTest() throws IOException {
 
-    List<WebElement> links = driver.findElements(By.tagName("a"));
-    System.out.println(links);
+    List<WebElement> webElementList = driver.findElements(By.tagName("img"));
+    System.out.println(webElementList);
 
-    for (WebElement element : links) {
-      String url1 = element.getAttribute("href");
-      URL url = new URL(url1);//why null? fixme
-      HttpURLConnection http = (HttpURLConnection) url.openConnection();
-      http.setConnectTimeout(2000);
+//    for (WebElement element : webElementList) {
+//      String url1 = element.getAttribute("href");
+////      URL url = new URL(url1);//why null? fixme
+//      URL url = new URL(url1);
+//      HttpURLConnection http = (HttpURLConnection) url.openConnection();
+//      http.setConnectTimeout(2000);
+//
+//      int responseCode = http.getResponseCode();
+//      String responseMessage = http.getResponseMessage();
+//      String statusCodeResult =
+//          "Response code for " + url + " is: " + responseCode + " " + responseMessage;
+//
+//      http.connect();
+//      System.out.println(statusCodeResult);
+//      http.disconnect();
+//    }
+    //todo need review
 
-      int responseCode = http.getResponseCode();
-      String responseMessage = http.getResponseMessage();
-      String statusCodeResult =
-          "Response code for " + url + " is: " + responseCode + " " + responseMessage;
-
-      http.connect();
-      System.out.println(statusCodeResult);
-      http.disconnect();
+    for (WebElement element : webElementList) {
+      HttpClient client = HttpClientBuilder.create().build();
+      HttpGet request = new HttpGet(element.getAttribute("src"));
+      HttpResponse response = client.execute(request);
+      System.out.println("request: " + request + " status code: " + response.getCode() + " "
+          + response.getReasonPhrase());
     }
 
-//    for (WebElement element : links) {
-//      HttpClient client = HttpClientBuilder.create().build();
-//      HttpGet request = new HttpGet(element.getAttribute("href"));
-//      HttpResponse response = client.execute(request);
-//      System.out.println("request: " + request + " status code: " + response.getCode() + " "
-//          + response.getReasonPhrase());
-//    }
-//
 //    for (int i = 0; i < links.size(); i++) {
 //      WebElement element = links.get(i);
 //      String url = element.getAttribute("href");
@@ -71,8 +77,12 @@ class BrokenLinksImagesTest {
 //    }
   }
 
-  private void statusCode(String httpUrlLink) throws IOException {
-    URL url = new URL(httpUrlLink);
+  @Test
+  public void statusCodeTest() throws IOException {
+    statusCode("https://demoqa.com/broken");//fixme
+  }
+  private void statusCode(String httpURL) throws IOException {
+    URL url = new URL(httpURL);
     HttpURLConnection http = (HttpURLConnection) url.openConnection();
     http.setConnectTimeout(2000);
 

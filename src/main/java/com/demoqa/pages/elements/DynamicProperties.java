@@ -19,6 +19,7 @@ public class DynamicProperties {
       "//span[@class=\"text\" and contains(text(), \"Dynamic Properties\")]");
 
   private final By willEnableFiveSeconds = By.id("enableAfter");
+  //todo make test cases for method
   private final By colorChangeAfterFiveSeconds = By.id("colorChange");
   private final By visibleAfterFiveSeconds = By.id("visibleAfter");
 
@@ -34,7 +35,9 @@ public class DynamicProperties {
   }
 
   public void setWillEnableFiveSeconds() {
-
+    WebElement element = driver.findElement(willEnableFiveSeconds);
+    element.isSelected();
+    element.click();
   }
 
 

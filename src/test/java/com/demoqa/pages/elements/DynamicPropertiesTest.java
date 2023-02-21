@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 class DynamicPropertiesTest {
 
-  DynamicProperties dynamicProperties;
+  DynamicProperties dynProp;
   WebDriver driver;
 
   private static final String MAIN_PAGE = "https://demoqa.com/";//todo one constant for all methods
@@ -22,16 +22,16 @@ class DynamicPropertiesTest {
   @BeforeEach
   void setUp() {
     driver = new ChromeDriver();
-    dynamicProperties = new DynamicProperties(driver);
+    dynProp = new DynamicProperties(driver);
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();
-    dynamicProperties.setElementsLocator();
-    dynamicProperties.setDynamicProperties();
+    dynProp.setElementsLocator();
+    dynProp.setDynamicProperties();
   }
 
   @Test
   void setElementsLocator() {
-
+    dynProp.setWillEnableFiveSeconds();
   }
 
   @Test

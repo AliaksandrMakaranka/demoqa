@@ -22,6 +22,7 @@ public class Links {
 
   //Following links will send an api call
   private final By createdCode201 = By.id("created");
+  //todo make task for get response code with javascript:void(0)
   private final By noContentCode204 = By.id("no-content");
   private final By moveCode301 = By.id("moved");
   private final By badRequestCode400 = By.id("bad-request");
@@ -49,5 +50,9 @@ public class Links {
 
   public WebElement getHomeLocatorNewWindow() {
     return driver.findElement(homeLocatorNewWindow);
+  }
+
+  public void setNoContentCode204() {
+    driver.findElement(noContentCode204).click();
   }
 }
