@@ -1,10 +1,10 @@
 package com.demoqa.pages.elements;
 
 import com.demoqa.pages.Helper;
-import com.demoqa.pages.elements.Links;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.List;
+import java.util.Optional;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
@@ -14,6 +14,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.devtools.DevTools;
+import org.openqa.selenium.devtools.v85.network.Network;
+import org.openqa.selenium.devtools.v85.network.model.Response;
 
 class LinksTest {
 
@@ -33,8 +36,8 @@ class LinksTest {
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();
     links = new Links(driver);
-    links.setElementsLocator();
-    links.setLinks();
+//    links.setElementsLocator();
+//    links.setLinks();
   }
 
   @Test
@@ -44,15 +47,30 @@ class LinksTest {
       System.out.println(element);
       String url = element.getAttribute("href");
       Helper helper = new Helper();
-      helper.statusCode(url);//fixme
+      helper.statusCode(url);//fixme mayby wrong import check it
     }
   }
 
   @Test
   public void openNewWindowTest() {//status code
-    String newWindowURL = driver.findElement(By.linkText("Home")).getAttribute("href");
-    //todo
-    driver.navigate().to(newWindowURL);
+    links.setHomeLocatorNewWindow();
+    //todo make assert
+    String originalWindow = driver.getWindowHandle();
+    for (String windowHandle : driver.getWindowHandles()) {
+      if (!originalWindow.contentEquals(windowHandle)) {
+        driver.switchTo().window(windowHandle);
+        System.out.println(windowHandle);
+        break;
+      }
+    }
+    System.out.println(originalWindow);
+    String expectedResult = "New Window";
+    String actualResult = driver.getTitle();
+
+  }
+
+  @Test
+  public void responseNoContentCodeTest() {
 
   }
 
