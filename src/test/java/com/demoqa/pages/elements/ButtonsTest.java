@@ -19,7 +19,7 @@ class ButtonsTest {
   //todo before all and take out driver factory
   @BeforeAll
   public static void setUpClass() {
-    WebDriverManager.chromedriver().setup();
+//    WebDriverManager.chromedriver().setup();
   }
 
   @BeforeEach
