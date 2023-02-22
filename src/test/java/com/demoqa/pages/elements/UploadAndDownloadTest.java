@@ -16,10 +16,6 @@ class UploadAndDownloadTest {
   WebDriver driver;
   private static final String MAIN_PAGE = "https://demoqa.com/";//todo one constant for all methods
 
-  @BeforeAll
-  public static void setUpClass() {
-    WebDriverManager.chromedriver().setup();
-  }
 
   @BeforeEach
   void setUp() {
