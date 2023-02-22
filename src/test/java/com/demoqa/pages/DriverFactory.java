@@ -8,7 +8,7 @@ public class DriverFactory {
   private static final String MAIN_PAGE = "https://demoqa.com/";
 
   //TODO make for before each
-  public static WebDriver create() {//fixme broken
+  public static WebDriver create() {//fixme broken use other method
     WebDriver driver = new ChromeDriver();
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();

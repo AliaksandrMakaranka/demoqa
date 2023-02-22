@@ -28,7 +28,7 @@ class UploadAndDownloadTest {
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();
     upD.setElementsLocator();
-    //we use JE but simple method can't see line on the web
+    //we use JE but simple method can't see line on the web fixme -> use one method for all Elements!?
     ((JavascriptExecutor) driver).executeScript("arguments[0].click();",
         upD.getUpAndDownLoadLocator());
   }
