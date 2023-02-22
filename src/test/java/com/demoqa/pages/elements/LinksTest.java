@@ -4,7 +4,6 @@ import com.demoqa.pages.Helper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
@@ -16,9 +15,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
-import org.openqa.selenium.devtools.v85.network.model.Response;
 
 class LinksTest {
 

@@ -113,9 +113,12 @@ class WebTablesTest {
   @Test
   public void tryUseFakerAndReturnStringWithAllParamTest() {
     //todo finish method
-    var expectedUser = createFakeUser();
-    var userMail = expectedUser.getEmail();
-//    addUser(createFakeUser());
+    User fakeUser = createFakeUser();
+    addUser(fakeUser);
+    String user = webTables.getUser(fakeUser.email);
+    var userMail =  fakeUser.getEmail();
+    //FIXME email actual =! expected generate new email
+    System.out.println(user);
     System.out.println(userMail);
   }
   @Test
