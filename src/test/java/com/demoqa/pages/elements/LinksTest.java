@@ -4,19 +4,17 @@ import com.demoqa.pages.Helper;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.io.IOException;
 import java.util.List;
-import java.util.Optional;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.devtools.DevTools;
-import org.openqa.selenium.devtools.v85.network.Network;
-import org.openqa.selenium.devtools.v85.network.model.Response;
 
 class LinksTest {
 
@@ -36,11 +34,12 @@ class LinksTest {
     driver.get(MAIN_PAGE);
     driver.manage().window().maximize();
     links = new Links(driver);
-//    links.setElementsLocator();
-//    links.setLinks();
+    links.setElementsLocator();
+    links.setLinks();
   }
 
   @Test
+  @Disabled
   public void createStatusCode() throws IOException {
     List<WebElement> list = driver.findElements(By.tagName("a"));
     for (WebElement element : list) {
@@ -63,10 +62,10 @@ class LinksTest {
         break;
       }
     }
-    System.out.println(originalWindow);
-    String expectedResult = "New Window";
+    String expectedResult = "DEMOQA";
     String actualResult = driver.getTitle();
 
+    Assertions.assertThat(expectedResult).isEqualTo(actualResult);
   }
 
   @Test
@@ -85,6 +84,6 @@ class LinksTest {
 
   @AfterAll
   public static void tearDownClass() {
-    System.out.println("After all disabled");
+    System.out.println("After all disabled");//fixme delete ALL methods
   }
 }

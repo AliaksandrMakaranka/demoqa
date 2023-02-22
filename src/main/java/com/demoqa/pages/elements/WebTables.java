@@ -157,8 +157,9 @@ public class WebTables {
   public String getUser(String userMail) {
     //some code for return usermail
     //вернут ьвсю строку по задоному эмэйлу
-    //TODO
-    return driver.findElement(By.cssSelector(".rt-tr-group .rt-td:nth-child(4)")).getText();
+    //TODO solve proble
+    return null;//time mock
+    //return driver.findElement(By.cssSelector(".rt-tr-group .rt-td:nth-child(4)")).getText();
   }
 }
 

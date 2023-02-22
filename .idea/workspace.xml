@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add BrokenLinksImages and refactor package">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/DynamicProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/elements/UploadAndDownload.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/DynamicPropertiesTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/UploadAndDownloadTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="save pogress">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,10 +73,14 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.demoqa.pages.elements" />
+    </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.demoqa.pages.elements" />
       <recent name="pages" />
       <recent name="pages.elements" />
       <recent name="" />
@@ -88,8 +90,8 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.UploadAndDownloadTest.upLoadTest">
-    <configuration name="BrokenLinksImagesTest.brokenImageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest">
+    <configuration name="CheckBoxTest.checkAllElementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -98,40 +100,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.BrokenLinksImagesTest" />
-      <option name="METHOD_NAME" value="brokenImageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DynamicPropertiesTest.setElementsLocator" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.DynamicPropertiesTest" />
-      <option name="METHOD_NAME" value="setElementsLocator" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LinksTest.createStatusCode" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.LinksTest" />
-      <option name="METHOD_NAME" value="createStatusCode" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.CheckBoxTest" />
+      <option name="METHOD_NAME" value="checkAllElementsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -141,19 +111,19 @@
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="pages.elements.LinksTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.LinksTest" />
       <option name="METHOD_NAME" value="openNewWindowTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UploadAndDownloadTest.upLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WebTablesTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -162,8 +132,40 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.UploadAndDownloadTest" />
-      <option name="METHOD_NAME" value="upLoadTest" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
+      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesTest.editUserAldenFromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
+      <option name="METHOD_NAME" value="editUserAldenFromTablesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
+      <option name="METHOD_NAME" value="tryUseFakerAndReturnStringWithAllParamTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +173,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.UploadAndDownloadTest.upLoadTest" />
-        <item itemvalue="JUnit.DynamicPropertiesTest.setElementsLocator" />
-        <item itemvalue="JUnit.BrokenLinksImagesTest.brokenImageTest" />
-        <item itemvalue="JUnit.LinksTest.createStatusCode (1)" />
+        <item itemvalue="JUnit.WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest" />
+        <item itemvalue="JUnit.WebTablesTest.addNewUser" />
+        <item itemvalue="JUnit.WebTablesTest.editUserAldenFromTablesTest" />
         <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
+        <item itemvalue="JUnit.CheckBoxTest.checkAllElementsTest" />
       </list>
     </recent_temporary>
   </component>
@@ -265,7 +267,63 @@
       <option name="project" value="LOCAL" />
       <updated>1676775369337</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="found solution with JavaSctiptExecutor&#10;done upLoadTest">
+      <created>1676782827646</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1676782827646</updated>
+    </task>
+    <task id="LOCAL-00013" summary="checkpoint&#10;add some methods&#10;add tasks">
+      <created>1676924429339</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1676924429339</updated>
+    </task>
+    <task id="LOCAL-00014" summary="try to use ChomeDriver insted of WebDriver due to we (I) use only Chrome for tests&#10;add methods for ChromeDriver -&gt; LinksChromeDriver">
+      <created>1676953417584</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1676953417584</updated>
+    </task>
+    <task id="LOCAL-00015" summary="add CheckBox and CheckBoxTest&#10;solution for decrease code repeat urself">
+      <created>1676964261833</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1676964261833</updated>
+    </task>
+    <task id="LOCAL-00016" summary="add checkAllElementsTest">
+      <created>1677024688502</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024688502</updated>
+    </task>
+    <task id="LOCAL-00017" summary="add some information in README.md">
+      <created>1677024868589</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1677024868589</updated>
+    </task>
+    <task id="LOCAL-00018" summary="add some tasks">
+      <created>1677028194593</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1677028194593</updated>
+    </task>
+    <task id="LOCAL-00019" summary="save pogress">
+      <created>1677042975649</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1677042975649</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -290,7 +348,15 @@
     <MESSAGE value="add buttons class + test&#10;remove commits form code" />
     <MESSAGE value="refactor code remove driver factory was a bug &#10;add Helper + statusCode method&#10;remove DriverFactory from code add simple solution&#10;add some task with todo marker" />
     <MESSAGE value="add BrokenLinksImages and refactor package" />
-    <option name="LAST_COMMIT_MESSAGE" value="add BrokenLinksImages and refactor package" />
+    <MESSAGE value="found solution with JavaSctiptExecutor&#10;done upLoadTest" />
+    <MESSAGE value="checkpoint&#10;add some methods&#10;add tasks" />
+    <MESSAGE value="try to use ChomeDriver insted of WebDriver due to we (I) use only Chrome for tests&#10;add methods for ChromeDriver -&gt; LinksChromeDriver" />
+    <MESSAGE value="add CheckBox and CheckBoxTest&#10;solution for decrease code repeat urself" />
+    <MESSAGE value="add checkAllElementsTest" />
+    <MESSAGE value="add some information in README.md" />
+    <MESSAGE value="add some tasks" />
+    <MESSAGE value="save pogress" />
+    <option name="LAST_COMMIT_MESSAGE" value="save pogress" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
