@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="save pogress">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="delete not working Before all">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/alertframewindows/BrowserWindowsTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/alertframewindows/BrowserWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/alertframewindows/BrowserWindows.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -86,60 +87,76 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.demoqa.pages.alertframewindows" />
       <recent name="com.demoqa.pages.elements" />
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest">
-    <configuration name="CheckBoxTest.checkAllElementsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.BrowserWindowsTest.setMsgWindowButtonWrapper">
+    <configuration name="BrowserWindowsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.CheckBoxTest" />
-      <option name="METHOD_NAME" value="checkAllElementsTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BrowserWindowsTest.setMsgWindowButtonWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
+      <option name="METHOD_NAME" value="setMsgWindowButtonWrapper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LinksTest.openNewWindowTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BrowserWindowsTest.setTabButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.LinksTest" />
-      <option name="METHOD_NAME" value="openNewWindowTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
+      <option name="METHOD_NAME" value="setTabButton" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesTest.addNewUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BrowserWindowsTest.setWindowButtonWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="addNewUser" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
+      <option name="METHOD_NAME" value="setWindowButtonWrapper" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebTablesTest.editUserAldenFromTablesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="UploadAndDownloadTest.upLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -148,24 +165,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="editUserAldenFromTablesTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.WebTablesTest" />
-      <option name="METHOD_NAME" value="tryUseFakerAndReturnStringWithAllParamTest" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.UploadAndDownloadTest" />
+      <option name="METHOD_NAME" value="upLoadTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -173,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.WebTablesTest.tryUseFakerAndReturnStringWithAllParamTest" />
-        <item itemvalue="JUnit.WebTablesTest.addNewUser" />
-        <item itemvalue="JUnit.WebTablesTest.editUserAldenFromTablesTest" />
-        <item itemvalue="JUnit.LinksTest.openNewWindowTest" />
-        <item itemvalue="JUnit.CheckBoxTest.checkAllElementsTest" />
+        <item itemvalue="JUnit.BrowserWindowsTest.setMsgWindowButtonWrapper" />
+        <item itemvalue="JUnit.BrowserWindowsTest.setWindowButtonWrapper" />
+        <item itemvalue="JUnit.BrowserWindowsTest" />
+        <item itemvalue="JUnit.BrowserWindowsTest.setTabButton" />
+        <item itemvalue="JUnit.UploadAndDownloadTest.upLoadTest" />
       </list>
     </recent_temporary>
   </component>
@@ -323,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677042975649</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="delete not working Before all">
+      <created>1677096504382</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1677096504382</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -356,7 +364,8 @@
     <MESSAGE value="add some information in README.md" />
     <MESSAGE value="add some tasks" />
     <MESSAGE value="save pogress" />
-    <option name="LAST_COMMIT_MESSAGE" value="save pogress" />
+    <MESSAGE value="delete not working Before all" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete not working Before all" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
