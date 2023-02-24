@@ -12,6 +12,7 @@ public class DynamicProperties {
   public DynamicProperties(WebDriver driver) {
     this.driver = driver;
   }
+
   private final By elementsLocator = By.xpath(
       "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
 
@@ -31,7 +32,7 @@ public class DynamicProperties {
 
   public void setDynamicProperties() {
     WebElement element = driver.findElement(dynamicProperties);
-    ((JavascriptExecutor)driver).executeScript("arguments[0].click();", element);
+    ((JavascriptExecutor) driver).executeScript("arguments[0].click();", element);
   }
 
   public void setWillEnableFiveSeconds() {
@@ -39,8 +40,6 @@ public class DynamicProperties {
     element.isSelected();
     element.click();
   }
-
-
 
 
 }
