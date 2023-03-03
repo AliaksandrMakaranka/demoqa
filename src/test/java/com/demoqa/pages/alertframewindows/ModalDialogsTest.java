@@ -46,6 +46,7 @@ class ModalDialogsTest {
   @Test
   void showLargeModalTest() {
     md.setShowLargeModal();
+    //todo analog for close modal window
   }
 
   @AfterEach
