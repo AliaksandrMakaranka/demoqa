@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="delete not working Before all">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/alertframewindows/BrowserWindowsTest.java" afterDir="false" />
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add DatePicker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/alertframewindows/BrowserWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/alertframewindows/BrowserWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,6 +67,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/zac/IdeaProjects/demoqa/src/test/java&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zac/CodingBootCampJava.&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -87,44 +87,46 @@
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.demoqa.pages.widgets" />
       <recent name="com.demoqa.pages.alertframewindows" />
       <recent name="com.demoqa.pages.elements" />
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.BrowserWindowsTest.setMsgWindowButtonWrapper">
-    <configuration name="BrowserWindowsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.DatePickerTest.setDateAndTime">
+    <configuration name="DatePickerTest.setDateAndTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
+          <option name="PATTERN" value="com.demoqa.pages.widgets.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="BrowserWindowsTest.setMsgWindowButtonWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
-      <option name="METHOD_NAME" value="setMsgWindowButtonWrapper" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.widgets" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.widgets.DatePickerTest" />
+      <option name="METHOD_NAME" value="setDateAndTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTest.setTabButton" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatePickerTest.setSelectDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.widgets.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.widgets" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.widgets.DatePickerTest" />
+      <option name="METHOD_NAME" value="setSelectDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FramesTest.setSampleHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -133,14 +135,14 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
-      <option name="METHOD_NAME" value="setTabButton" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.FramesTest" />
+      <option name="METHOD_NAME" value="setSampleHeading" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BrowserWindowsTest.setWindowButtonWrapper" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModalDialogsTest.setShowSmallModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -149,24 +151,24 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.BrowserWindowsTest" />
-      <option name="METHOD_NAME" value="setWindowButtonWrapper" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.ModalDialogsTest" />
+      <option name="METHOD_NAME" value="setShowSmallModal" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="UploadAndDownloadTest.upLoadTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ModalDialogsTest.showSmallModalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.UploadAndDownloadTest" />
-      <option name="METHOD_NAME" value="upLoadTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.ModalDialogsTest" />
+      <option name="METHOD_NAME" value="showSmallModalTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,11 +176,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.BrowserWindowsTest.setMsgWindowButtonWrapper" />
-        <item itemvalue="JUnit.BrowserWindowsTest.setWindowButtonWrapper" />
-        <item itemvalue="JUnit.BrowserWindowsTest" />
-        <item itemvalue="JUnit.BrowserWindowsTest.setTabButton" />
-        <item itemvalue="JUnit.UploadAndDownloadTest.upLoadTest" />
+        <item itemvalue="JUnit.DatePickerTest.setDateAndTime" />
+        <item itemvalue="JUnit.DatePickerTest.setSelectDate" />
+        <item itemvalue="JUnit.ModalDialogsTest.showSmallModalTest" />
+        <item itemvalue="JUnit.ModalDialogsTest.setShowSmallModal" />
+        <item itemvalue="JUnit.FramesTest.setSampleHeading" />
       </list>
     </recent_temporary>
   </component>
@@ -331,7 +333,56 @@
       <option name="project" value="LOCAL" />
       <updated>1677096504382</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="add tabButtonTest&#10;add windowButtonTest&#10;todo msgWindowButtonTest">
+      <created>1677138581205</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1677138581205</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Alerts done but need add some asserts">
+      <created>1677229441375</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1677229441375</updated>
+    </task>
+    <task id="LOCAL-00023" summary="checking commit">
+      <created>1677229588063</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1677229588063</updated>
+    </task>
+    <task id="LOCAL-00024" summary="add frames -&gt; todo fix method">
+      <created>1677236070380</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1677236070380</updated>
+    </task>
+    <task id="LOCAL-00025" summary="add ModalDialogs&#10;add ModalDialogsTest">
+      <created>1677446893404</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1677446893404</updated>
+    </task>
+    <task id="LOCAL-00026" summary="add showSmallModal test with for">
+      <created>1677624919664</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1677624919664</updated>
+    </task>
+    <task id="LOCAL-00027" summary="add DatePicker">
+      <created>1677881124356</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1677881124356</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -346,7 +397,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="prepare git ignore" />
     <MESSAGE value="first test, performance check" />
     <MESSAGE value="add some methods" />
     <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
@@ -365,7 +415,14 @@
     <MESSAGE value="add some tasks" />
     <MESSAGE value="save pogress" />
     <MESSAGE value="delete not working Before all" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete not working Before all" />
+    <MESSAGE value="add tabButtonTest&#10;add windowButtonTest&#10;todo msgWindowButtonTest" />
+    <MESSAGE value="Alerts done but need add some asserts" />
+    <MESSAGE value="checking commit" />
+    <MESSAGE value="add frames -&gt; todo fix method" />
+    <MESSAGE value="add ModalDialogs&#10;add ModalDialogsTest" />
+    <MESSAGE value="add showSmallModal test with for" />
+    <MESSAGE value="add DatePicker" />
+    <option name="LAST_COMMIT_MESSAGE" value="add DatePicker" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
