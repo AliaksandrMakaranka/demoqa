@@ -4,9 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="add DatePicker">
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="save progress &amp;&amp; fixme for next session">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,8 +95,40 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.DatePickerTest.setDateAndTime">
-    <configuration name="DatePickerTest.setDateAndTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest">
+    <configuration name="AlertsTest.alertButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.AlertsTest" />
+      <option name="METHOD_NAME" value="alertButtonTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CheckBoxTest.setCheckBoxElementsExpandsAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demoqa" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.CheckBoxTest" />
+      <option name="METHOD_NAME" value="setCheckBoxElementsExpandsAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DatePickerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -104,8 +138,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.widgets" />
       <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.widgets.DatePickerTest" />
-      <option name="METHOD_NAME" value="setDateAndTime" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -126,49 +159,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FramesTest.setSampleHeading" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TextBoxTest.fillAllFieldsWithCorrectEmailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
+          <option name="PATTERN" value="com.demoqa.pages.elements.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.FramesTest" />
-      <option name="METHOD_NAME" value="setSampleHeading" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModalDialogsTest.setShowSmallModal" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.ModalDialogsTest" />
-      <option name="METHOD_NAME" value="setShowSmallModal" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ModalDialogsTest.showSmallModalTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demoqa" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.demoqa.pages.alertframewindows.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.demoqa.pages.alertframewindows" />
-      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.alertframewindows.ModalDialogsTest" />
-      <option name="METHOD_NAME" value="showSmallModalTest" />
+      <option name="PACKAGE_NAME" value="com.demoqa.pages.elements" />
+      <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.elements.TextBoxTest" />
+      <option name="METHOD_NAME" value="fillAllFieldsWithCorrectEmailTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,11 +177,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DatePickerTest.setDateAndTime" />
+        <item itemvalue="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest" />
+        <item itemvalue="JUnit.CheckBoxTest.setCheckBoxElementsExpandsAllTest" />
+        <item itemvalue="JUnit.AlertsTest.alertButtonTest" />
         <item itemvalue="JUnit.DatePickerTest.setSelectDate" />
-        <item itemvalue="JUnit.ModalDialogsTest.showSmallModalTest" />
-        <item itemvalue="JUnit.ModalDialogsTest.setShowSmallModal" />
-        <item itemvalue="JUnit.FramesTest.setSampleHeading" />
+        <item itemvalue="JUnit.DatePickerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -382,7 +383,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677881124356</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="save progress &amp;&amp; fixme for next session">
+      <created>1677965731245</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1677965731245</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -397,7 +405,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="first test, performance check" />
     <MESSAGE value="add some methods" />
     <MESSAGE value="radio button method done&#10;need refactor for solve problem with duplicate code" />
     <MESSAGE value="refactor code add driver factory" />
@@ -422,7 +429,8 @@
     <MESSAGE value="add ModalDialogs&#10;add ModalDialogsTest" />
     <MESSAGE value="add showSmallModal test with for" />
     <MESSAGE value="add DatePicker" />
-    <option name="LAST_COMMIT_MESSAGE" value="add DatePicker" />
+    <MESSAGE value="save progress &amp;&amp; fixme for next session" />
+    <option name="LAST_COMMIT_MESSAGE" value="save progress &amp;&amp; fixme for next session" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/demoqa$ButtonsTest.ic" NAME="ButtonsTest Coverage Results" MODIFIED="1676730693855" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

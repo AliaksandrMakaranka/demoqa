@@ -1,6 +1,5 @@
 package com.demoqa.pages.elements;
 
-import com.demoqa.pages.elements.TextBox;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
@@ -23,7 +22,9 @@ public class TextBoxTest {
 
   @BeforeEach
   void setUp() {
+
     driver = new ChromeDriver();
+    driver.manage().window().maximize();
     driver.get(MAIN_PAGE);
     textBox = new TextBox(driver);
     textBox.setElementsLocator();
@@ -38,10 +39,10 @@ public class TextBoxTest {
     textBox.setPermanentAddress("Gym");
     textBox.setSubmitButton();
 
+
     String newResultEmail = textBox.getResultEmail();
     Assertions.assertThat(newResultEmail).isNotNull().isNotEmpty().containsAnyOf("@", ".");
-    //todo
-    //add min max length for email
+    //todo add min max length for email regex
   }
 
   @Test
@@ -74,6 +75,7 @@ public class TextBoxTest {
 
   @Test
   public void fillCurrentAddressTest() {
+
     textBox.setCurrentAddress("`'False | or And /****/ \'\''\tab");
     textBox.setSubmitButton();
 
@@ -95,10 +97,10 @@ public class TextBoxTest {
 
   @AfterEach
   public void teardown() {
-    if (driver != null) {
-      driver.close();
-      driver.quit();
-    }
+//    if (driver != null) {
+//      driver.close();
+//      driver.quit();
+//    }
   }
 
 }
