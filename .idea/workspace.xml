@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="save progress &amp;&amp; fixme for next session">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demoqa/pages/widgets/DatePicker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/elements/TextBoxTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/demoqa/pages/widgets/DatePickerTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="fb69c032-49b9-45ba-8c0b-5e0708b587d1" name="Changes" comment="save progress &amp;&amp; fixme for next session" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -69,7 +63,7 @@
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
     &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
     &quot;last_directory_selection&quot;: &quot;/home/zac/IdeaProjects/demoqa/src/test/java&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/zac/CodingBootCampJava.&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zac/IdeaProjects/demoqa&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
@@ -95,7 +89,7 @@
       <recent name="pages.elements" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest">
+  <component name="RunManager" selected="JUnit.DatePickerTest">
     <configuration name="AlertsTest.alertButtonTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
@@ -143,7 +137,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DatePickerTest.setSelectDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="DatePickerTest.setDateAndTime" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demoqa" />
       <extension name="coverage">
         <pattern>
@@ -153,7 +147,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.demoqa.pages.widgets" />
       <option name="MAIN_CLASS_NAME" value="com.demoqa.pages.widgets.DatePickerTest" />
-      <option name="METHOD_NAME" value="setSelectDate" />
+      <option name="METHOD_NAME" value="setDateAndTime" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -177,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.DatePickerTest" />
+        <item itemvalue="JUnit.DatePickerTest.setDateAndTime" />
         <item itemvalue="JUnit.TextBoxTest.fillAllFieldsWithCorrectEmailTest" />
         <item itemvalue="JUnit.CheckBoxTest.setCheckBoxElementsExpandsAllTest" />
         <item itemvalue="JUnit.AlertsTest.alertButtonTest" />
-        <item itemvalue="JUnit.DatePickerTest.setSelectDate" />
-        <item itemvalue="JUnit.DatePickerTest" />
       </list>
     </recent_temporary>
   </component>
