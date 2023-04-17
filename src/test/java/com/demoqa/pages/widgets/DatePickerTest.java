@@ -19,8 +19,6 @@ class DatePickerTest {
     driver = new ChromeDriver();
     dp = new DatePicker(driver);
     dp.setUpBeforeEach();
-
-
   }
 
   @Test
@@ -29,7 +27,6 @@ class DatePickerTest {
     dp.setSelectDate(date);
 
     //todo asserts
-
   }
 
   @Test
