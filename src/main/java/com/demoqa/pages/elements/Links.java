@@ -1,58 +1,97 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class Links {
+public class Links extends CommonActions {
+    @FindBy(id = "simpleLink")
+    private WebElement simpleLink;
 
-  private final WebDriver driver;
+    @FindBy(id = "dynamicLink")
+    private WebElement dynamicLink;
 
-  public Links(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "created")
+    private WebElement createdLink;
 
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By links = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Links\")]");
+    @FindBy(id = "no-content")
+    private WebElement noContentLink;
 
-  //Following links will open new tab
-  private final By homeLocatorNewWindow = By.id("simpleLink");
+    @FindBy(id = "moved")
+    private WebElement movedLink;
 
-  //Following links will send an api call
-  private final By createdCode201 = By.id("created");
-  //todo make task for get response code with javascript:void(0)
-  private final By noContentCode204 = By.id("no-content");
-  private final By moveCode301 = By.id("moved");
-  private final By badRequestCode400 = By.id("bad-request");
-  private final By unauthorizedCode401 = By.id("unauthorized");
-  private final By forbiddenCode403 = By.id("forbidden");
-  private final By invalidUrlCode404 = By.id("invalid-url");
+    @FindBy(id = "bad-request")
+    private WebElement badRequestLink;
 
-  //setter
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
-  public void setLinks() {
-    driver.findElement(links).click();
-  }
+    @FindBy(id = "unauthorized")
+    private WebElement unauthorizedLink;
 
-  public void setCreatedCode201() {
-    //void or WebElement
-    //todo make proble with javascript:void(0) and find solution
-    driver.findElement(createdCode201).click();
-  }
+    @FindBy(id = "forbidden")
+    private WebElement forbiddenLink;
 
-  public void setHomeLocatorNewWindow() {
-    driver.findElement(homeLocatorNewWindow).click();
-  }
+    @FindBy(id = "invalid-url")
+    private WebElement invalidUrlLink;
 
-  public WebElement getHomeLocatorNewWindow() {
-    return driver.findElement(homeLocatorNewWindow);
-  }
+    @FindBy(id = "linkResponse")
+    private WebElement linkResponse;
 
-  public void setNoContentCode204() {
-    driver.findElement(noContentCode204).click();
-  }
+    @FindBy(id = "elementsLocator")
+    private WebElement elementsLocator;
+
+    @FindBy(id = "links")
+    private WebElement links;
+
+    public Links(WebDriver driver) {
+        super(driver);
+    }
+
+    public void clickSimpleLink() {
+        click(simpleLink);
+    }
+
+    public void clickDynamicLink() {
+        click(dynamicLink);
+    }
+
+    public void clickCreatedLink() {
+        click(createdLink);
+    }
+
+    public void clickNoContentLink() {
+        click(noContentLink);
+    }
+
+    public void clickMovedLink() {
+        click(movedLink);
+    }
+
+    public void clickBadRequestLink() {
+        click(badRequestLink);
+    }
+
+    public void clickUnauthorizedLink() {
+        click(unauthorizedLink);
+    }
+
+    public void clickForbiddenLink() {
+        click(forbiddenLink);
+    }
+
+    public void clickInvalidUrlLink() {
+        click(invalidUrlLink);
+    }
+
+    public String getLinkResponse() {
+        return getText(linkResponse);
+    }
+
+    public void setElementsLocator() {
+        click(elementsLocator);
+    }
+
+    public void setLinks() {
+        click(links);
+    }
 }

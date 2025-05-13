@@ -1,67 +1,67 @@
 package com.demoqa.pages.elements;
 
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class CheckBox {
+public class CheckBox extends CommonActions {
 
-  private final WebDriver driver;
+  @FindBy(id = "tree-node-home")
+  private WebElement homeCheckbox;
+
+  @FindBy(id = "result")
+  private WebElement result;
+
+  @FindBy(xpath = "//*[@class=\"rct-icon rct-icon-uncheck\"]")
+  private WebElement expandAll;
+
+  @FindBy(xpath = "//*[@class=\"rct-icon rct-icon-check\"]")
+  private WebElement collapseAll;
+
+  @FindBy(xpath = "//*[@class=\"rct-icon rct-icon-uncheck\"]")
+  private WebElement homeIfCollapse;
+
+  @FindBy(xpath = "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]")
+  private WebElement elementsLocator;
+
+  @FindBy(xpath = "//span[@class=\"text\" and contains(text(), \"Check Box\")]")
+  private WebElement checkBox;
 
   public CheckBox(WebDriver driver) {
-    this.driver = driver;
+    super(driver);
   }
-
-
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By checkBox = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Check Box\")]");
-
-  private final By expandAll = By.xpath("//*[@class=\"rct-icon rct-icon-expand-all\"]");
-  private final By collapseAll = By.xpath("//*[@class=\"rct-icon rct-icon-collapse-all\"]");
-
-  private final By checkBoxElements = By.xpath(
-      "//*[@class=\"rct-icon rct-icon-check\"]");//default isn't enable
-
-  private final By homeIfCollapse = By.xpath(
-      "//*[@class=\"rct-icon rct-icon-uncheck\"]"); //x1 if uncolapse all = x17
-  private final By selectedResult = By.xpath("//div[@class=\"display-result mt-4\"]");
-
 
   public String getActualResultAllCheckbox() {
     return "You have selected :\nhome\ndesktop\nnotes\ncommands\ndocuments\nworkspace\nreact\nangular\nveu\noffice\npublic\nprivate\nclassified\ngeneral\ndownloads\nwordFile\nexcelFile";
   }
 
   public String getSelectedResult() {
-    return driver.findElement(selectedResult).getText();
+    return getText(result);
   }
 
   public void setExpandAll() {
-
-    //if not expand all anh open if it open?
-    driver.findElement(expandAll).click();
+    click(expandAll);
   }
 
   public void setCollapseAll() {
-    driver.findElement(collapseAll).click();
+    click(collapseAll);
   }
 
   public void setCheckBoxElements() {
-    WebElement e = driver.findElement(homeIfCollapse);
-    if (!e.isSelected()) {
-      e.click();
+    if (!homeIfCollapse.isSelected()) {
+      click(homeIfCollapse);
     }
-    //todo
   }
 
-
   public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
+    click(elementsLocator);
   }
 
   public void setCheckBox() {
-    driver.findElement(checkBox).click();
+    click(checkBox);
   }
 
   public void setUpBeforeEach() {
@@ -71,5 +71,11 @@ public class CheckBox {
     this.setCheckBox();
   }
 
+  public void clickHomeCheckbox() {
+    click(homeCheckbox);
+  }
 
+  public String getResultText() {
+    return getText(result);
+  }
 }

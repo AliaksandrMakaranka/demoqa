@@ -1,91 +1,44 @@
 package com.demoqa.pages.elements;
 
-import com.github.javafaker.Faker;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class User {
+public class User extends CommonActions {
+    @FindBy(id = "firstName")
+    private WebElement firstNameInput;
 
-  Faker faker = new Faker();
+    @FindBy(id = "lastName")
+    private WebElement lastNameInput;
 
-  //most be private
-  String name;
+    @FindBy(id = "userEmail")
+    private WebElement userEmailInput;
 
-  String lastName;
+    @FindBy(id = "age")
+    private WebElement ageInput;
 
-  int age;
-  int salary;
-  String department;
-  String email;
-  public User(String name, String lastName, String email, int age, int salary, String department) {
-    this.name = name;
-    this.lastName = lastName;
-    this.email = email;
-    this.age = age;
-    this.salary = salary;
-    this.department = department;
-  }
+    @FindBy(id = "salary")
+    private WebElement salaryInput;
 
-  public void setFaker(Faker faker) {
-    this.faker = faker;
-  }
+    @FindBy(id = "department")
+    private WebElement departmentInput;
 
-  public void setName(String name) {
-    this.name = name;
-  }
+    @FindBy(id = "submit")
+    private WebElement submitButton;
 
-  public void setLastName(String lastName) {
-    this.lastName = lastName;
-  }
+    public User(WebDriver driver) {
+        super(driver);
+    }
 
-  public void setAge(int age) {
-    this.age = age;
-  }
-
-  public void setSalary(int salary) {
-    this.salary = salary;
-  }
-
-  public void setDepartment(String department) {
-    this.department = department;
-  }
-
-  public void setEmail(String email) {
-    this.email = email;
-  }
-
-
-  public String getName() {
-    return name;
-  }
-
-  public String getLastName() {
-    return lastName;
-  }
-
-  public int getAge() {
-    return age;
-  }
-
-  public int getSalary() {
-    return salary;
-  }
-
-  public String getDepartment() {
-    return department;
-  }
-
-  public String getEmail() {
-    return faker.internet().emailAddress();
-  }
-
-  @Override
-  public String toString() {
-    return """
-        %s
-        %s
-        %s
-        %d
-        %d
-        %s
-        """.formatted(name, lastName, email, age, salary, department);
-  }
+    public void fillForm(String firstName, String lastName, String userEmail, String age, String salary, String department) {
+        sendKeys(firstNameInput, firstName);
+        sendKeys(lastNameInput, lastName);
+        sendKeys(userEmailInput, userEmail);
+        sendKeys(ageInput, age);
+        sendKeys(salaryInput, salary);
+        sendKeys(departmentInput, department);
+        click(submitButton);
+    }
 }

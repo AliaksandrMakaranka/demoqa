@@ -1,42 +1,41 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class RadioButton {
-  private final WebDriver driver;
-  public RadioButton(WebDriver driver) {
-    this.driver = driver;
-  }
+public class RadioButton extends CommonActions {
+    @FindBy(id = "yesRadio")
+    private WebElement yesRadio;
 
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By radioButton = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Radio Button\")]");
+    @FindBy(id = "impressiveRadio")
+    private WebElement impressiveRadio;
 
-  //radio button
-  private final By yesRadioButton = By.xpath("//label[@for=\"yesRadio\"]");
-  private final By impressiveRadioButton = By.xpath("//label[@for=\"impressiveRadio\"]");
+    @FindBy(id = "noRadio")
+    private WebElement noRadio;
 
-  //text
-  private final By resultButton = By.xpath("//span[@class=\"text-success\"]");
+    @FindBy(id = "result")
+    private WebElement result;
 
-  //setters
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
-  public void setRadioButton() {
-    driver.findElement(radioButton).click();
-  }
-  public void setYesRadioButton() {
-    driver.findElement(yesRadioButton).click();
-  }
-  public void setImpressiveRadioButton() {
-    driver.findElement(impressiveRadioButton).click();
-  }
-  public String getResultButton() {
-    return driver.findElement(resultButton).getText();
-  }
+    public RadioButton(WebDriver driver) {
+        super(driver);
+    }
 
+    public void clickYesRadio() {
+        click(yesRadio);
+    }
 
+    public void clickImpressiveRadio() {
+        click(impressiveRadio);
+    }
+
+    public void clickNoRadio() {
+        click(noRadio);
+    }
+
+    public String getResultText() {
+        return getText(result);
+    }
 }

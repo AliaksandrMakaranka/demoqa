@@ -3,6 +3,7 @@
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/alertframewindows/BrowserWindows.java
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/elements/Buttons.java
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/elements/LinksChromeDriver.java
+/home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/BasePage.java
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/elements/BrokenLinksImages.java
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/elements/DynamicProperties.java
 /home/zac/IdeaProjects/demoqa/src/main/java/com/demoqa/pages/elements/WebTables.java

@@ -1,29 +1,37 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class BrokenLinksImages {
-  private final WebDriver driver;
+public class BrokenLinksImages extends CommonActions {
+    @FindBy(id = "valid-image")
+    private WebElement validImage;
 
-  public BrokenLinksImages(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "broken-image")
+    private WebElement brokenImage;
 
+    @FindBy(id = "valid-link")
+    private WebElement validLink;
 
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
+    @FindBy(id = "broken-link")
+    private WebElement brokenLink;
 
-  private final By brokenLinksImages = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Broken Links - Images\")]");
+    public BrokenLinksImages(WebDriver driver) {
+        super(driver);
+    }
 
+    public void clickValidLink() {
+        click(validLink);
+    }
 
-  //setter
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
+    public void clickBrokenLink() {
+        click(brokenLink);
+    }
 
-  public void setBrokenLinksImages() {
-    driver.findElement(brokenLinksImages).click();
-  }
+    public boolean isImageDisplayed(WebElement image) {
+        return image.isDisplayed();
+    }
 }

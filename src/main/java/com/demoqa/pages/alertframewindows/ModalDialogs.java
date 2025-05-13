@@ -1,46 +1,55 @@
 package com.demoqa.pages.alertframewindows;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class ModalDialogs {
-  private final WebDriver driver;
+public class ModalDialogs extends BasePage {
+    @FindBy(id = "showSmallModal")
+    private WebElement showSmallModalButton;
 
-  public ModalDialogs(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "showLargeModal")
+    private WebElement showLargeModalButton;
 
-  private final By alertFrameWindows = By.xpath(
-      "//div[@class=\"card-body\"] /h5[contains(text(), \"Alerts, Frame & Windows\")]");
-  private final By modalDialogs = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Modal Dialogs\")]");
+    @FindBy(id = "closeSmallModal")
+    private WebElement closeSmallModalButton;
 
-  private final By showSmallModal = By.id("showSmallModal");
-  private final By showLargeModal = By.id("showLargeModal");
+    @FindBy(id = "closeLargeModal")
+    private WebElement closeLargeModalButton;
 
-  //setters
+    @FindBy(id = "example-modal-sizes-title-sm")
+    private WebElement smallModalTitle;
 
-  public void setAlertFrameWindows() {
-    driver.findElement(alertFrameWindows).click();
-  }
+    @FindBy(id = "example-modal-sizes-title-lg")
+    private WebElement largeModalTitle;
 
-  public void setModalDialogs() {
-    driver.findElement(modalDialogs).click();
-  }
+    public ModalDialogs(WebDriver driver) {
+        super(driver);
+    }
 
-  public void setShowSmallModal() {
-    driver.findElement(showSmallModal).click();
-  }
+    public void clickShowSmallModal() {
+        click(showSmallModalButton);
+    }
 
-  public void setShowLargeModal() {
-    driver.findElement(showLargeModal).click();
-  }
+    public void clickShowLargeModal() {
+        click(showLargeModalButton);
+    }
 
-  public void setUpBeforeEach() {
-    driver.get("https://demoqa.com");
-    driver.manage().window().maximize();
-    this.setAlertFrameWindows();
-    this.setModalDialogs();
-  }
+    public void clickCloseSmallModal() {
+        click(closeSmallModalButton);
+    }
+
+    public void clickCloseLargeModal() {
+        click(closeLargeModalButton);
+    }
+
+    public String getSmallModalTitle() {
+        return getText(smallModalTitle);
+    }
+
+    public String getLargeModalTitle() {
+        return getText(largeModalTitle);
+    }
 }
 

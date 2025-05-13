@@ -1,166 +1,78 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class WebTables {
-  private final WebDriver driver;
-  public WebTables(WebDriver driver) {
-    this.driver = driver;
-  }
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By webTables = By.xpath(
-        "//span[@class=\"text\" and contains(text(), \"Web Tables\")]");
+public class WebTables extends CommonActions {
+    @FindBy(id = "addNewRecordButton")
+    private WebElement addButton;
 
-  //sort fields
-  private final By sortFirstName = By.xpath("//div[contains(text(), \"First Name\")]");
-  private final By sortLastName = By.xpath("//div[contains(text(), \"Last Name\")]");
-  private final By sortAge = By.xpath("//div[contains(text(), \"Age\")]");
-  private final By sortEmail = By.xpath("//div[contains(text(), \"Email\")]");
-  private final By sortSalary = By.xpath("//div[contains(text(), \"Salary\")]");
-  private final By sortDepartment = By.xpath("//div[contains(text(), \"Department\")]");
-  private final By sortAction = By.xpath("//div[contains(text(), \"Action\")]");
+    @FindBy(id = "firstName")
+    private WebElement firstNameInput;
 
-  //edit and delete button (first in line)
-  private final By actionEdit = By.xpath("//span[@title=\"Edit\"]");
-  private final By actionDelete = By.xpath("//span[@title=\"Delete\"]");
+    @FindBy(id = "lastName")
+    private WebElement lastNameInput;
 
-  //search line
-  private final By searchBox = By.xpath("//input[@placeholder=\"Type to search\"]");
+    @FindBy(id = "userEmail")
+    private WebElement userEmailInput;
 
-  //no rows found
-  private final By noRowsFound = By.xpath("//div[@class=\"rt-noData\"]");
+    @FindBy(id = "age")
+    private WebElement ageInput;
 
-  //add button
-  private final By addNewRecordButton = By.xpath("//button[@id=\"addNewRecordButton\"]");
+    @FindBy(id = "salary")
+    private WebElement salaryInput;
 
-  //register form after push addNewRecordButton
-  private final By regFirstName = By.id("firstName");
-  private final By regLastName = By.id("lastName");
-  private final By regUserEmail = By.id("userEmail");
-  private final By regAge = By.id("age");
-  private final By regSalary = By.id("salary");
-  private final By regDepartment = By.id("department");
-  private final By regSubmitButton = By.id("submit");
+    @FindBy(id = "department")
+    private WebElement departmentInput;
 
-  //lines in tables
-  private final By firstLine = By.xpath("(//div[@class=\"rt-tr-group\"])[1]");
-  /**
-   * fourthLine time mok for check new user default 3
-   * todo search last add new user
-   */
-  private final By fourthLine = By.xpath("(//div[@class=\"rt-tr-group\"])[4]");
+    @FindBy(id = "submit")
+    private WebElement submitButton;
 
-  //todo add prev and next button, page counter , rows (base 10)
-//setters
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
+    @FindBy(id = "searchBox")
+    private WebElement searchBox;
 
-  public void setWebTables() {
-    driver.findElement(webTables).click();
-  }
+    @FindBy(id = "basic-addon2")
+    private WebElement searchButton;
 
-  public void setSortFirstName() {
-    driver.findElement(sortFirstName).click();
-  }
+    @FindBy(id = "delete-record-4")
+    private WebElement deleteButton;
 
-  public void setSortLastName() {
-    driver.findElement(sortLastName).click();
-  }
+    @FindBy(id = "edit-record-4")
+    private WebElement editButton;
 
-  public void setSortAge() {
-    driver.findElement(sortAge).click();
-  }
+    public WebTables(WebDriver driver) {
+        super(driver);
+    }
 
-  public void setSortEmail() {
-    driver.findElement(sortEmail).click();
-  }
+    public void clickAddButton() {
+        click(addButton);
+    }
 
-  public void setSortSalary() {
-    driver.findElement(sortSalary).click();
-  }
+    public void fillForm(String firstName, String lastName, String userEmail, String age, String salary, String department) {
+        sendKeys(firstNameInput, firstName);
+        sendKeys(lastNameInput, lastName);
+        sendKeys(userEmailInput, userEmail);
+        sendKeys(ageInput, age);
+        sendKeys(salaryInput, salary);
+        sendKeys(departmentInput, department);
+        click(submitButton);
+    }
 
-  public void setSortDepartment() {
-    driver.findElement(sortDepartment).click();
-  }
+    public void search(String text) {
+        sendKeys(searchBox, text);
+        click(searchButton);
+    }
 
-  public void setSortAction() {
-    driver.findElement(sortAction).click();
-  }
+    public void clickDeleteButton() {
+        click(deleteButton);
+    }
 
-  public void setActionEdit() {
-    driver.findElement(actionEdit).click();
-  }
-
-  public void setActionDelete() {
-    driver.findElement(actionDelete).click();
-  }
-
-  public void setSearchBox(String search) {
-    driver.findElement(searchBox).clear();
-    driver.findElement(searchBox).sendKeys(search);
-  }
-
-  public void setAddNewRecordButton() {
-    driver.findElement(addNewRecordButton).click();
-  }
-
-  public void setRegFirstName(String firstName) {
-    driver.findElement(regFirstName).clear();
-    driver.findElement(regFirstName).sendKeys(firstName);
-  }
-
-  public void setRegLastName(String lastName){
-    driver.findElement(regLastName).clear();
-    driver.findElement(regLastName).sendKeys(lastName);
-  }
-
-  public void setRegUserEmail(String userEmail) {
-    driver.findElement(regUserEmail).clear();
-    driver.findElement(regUserEmail).sendKeys(userEmail);
-  }
-
-  public void setRegAge(String age) {
-    driver.findElement(regAge).clear();
-    driver.findElement(regAge).sendKeys(age);
-  }
-
-  public void setRegSalary(String salary) {
-    driver.findElement(regSalary).clear();
-    driver.findElement(regSalary).sendKeys(salary);
-  }
-
-  public void setRegDepartment(String department) {
-    driver.findElement(regDepartment).clear();
-    driver.findElement(regDepartment).sendKeys(department);
-  }
-
-  public void setRegSubmitButton() {
-    driver.findElement(regSubmitButton).click();
-  }
-
-  //getters
-
-  public String getFirstLine() {
-    return driver.findElement(firstLine).getText();
-  }
-  public String getFourthLine() {
-    return driver.findElement(fourthLine).getText();
-  }
-
-  public String getNoRowsFound() {
-    return driver.findElement(noRowsFound).getText();
-  }
-
-  public String getUser(String userMail) {
-    //some code for return usermail
-    //вернут ьвсю строку по задоному эмэйлу
-    //TODO solve proble
-    return null;//time mock
-    //return driver.findElement(By.cssSelector(".rt-tr-group .rt-td:nth-child(4)")).getText();
-  }
+    public void clickEditButton() {
+        click(editButton);
+    }
 }
 
 

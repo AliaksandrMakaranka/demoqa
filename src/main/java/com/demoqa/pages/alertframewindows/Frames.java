@@ -1,43 +1,37 @@
 package com.demoqa.pages.alertframewindows;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class Frames {
+public class Frames extends BasePage {
+    @FindBy(id = "frame1")
+    private WebElement frame1;
 
-  private final WebDriver driver;
+    @FindBy(id = "frame2")
+    private WebElement frame2;
 
-  public Frames(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "sampleHeading")
+    private WebElement sampleHeading;
 
-  //path to working directory
-  private final By alertFrameWindows = By.xpath(
-      "//div[@class=\"card-body\"] /h5[contains(text(), \"Alerts, Frame & Windows\")]");
-    private final By frames = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Frames\")]");
+    public Frames(WebDriver driver) {
+        super(driver);
+    }
 
+    public void switchToFrame1() {
+        driver.switchTo().frame(frame1);
+    }
 
-  private final By sampleHeading = By.id("sampleHeading");
+    public void switchToFrame2() {
+        driver.switchTo().frame(frame2);
+    }
 
-  //setters
-  public void setAlertFrameWindows() {
-    driver.findElement(alertFrameWindows).click();
-  }
+    public void switchToDefaultContent() {
+        driver.switchTo().defaultContent();
+    }
 
-  public void setFrames() {
-    driver.findElement(frames).click();
-  }
-
-  public void setSampleHeading() {
-    driver.switchTo().frame(driver.findElement(sampleHeading));
-  }
-
-  public void setUpBeforeEach() {
-    driver.get("https://demoqa.com");
-    driver.manage().window().maximize();
-    this.setAlertFrameWindows();
-    this.setFrames();
-  }
+    public String getSampleHeading() {
+        return getText(sampleHeading);
+    }
 }

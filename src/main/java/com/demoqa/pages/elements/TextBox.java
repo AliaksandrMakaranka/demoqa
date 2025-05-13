@@ -1,79 +1,91 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class TextBox {
+public class TextBox extends CommonActions {
+    @FindBy(id = "userName")
+    private WebElement userNameInput;
 
-  private static WebDriver driver;
+    @FindBy(id = "userEmail")
+    private WebElement userEmailInput;
 
+    @FindBy(id = "currentAddress")
+    private WebElement currentAddressInput;
 
-  public TextBox(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "permanentAddress")
+    private WebElement permanentAddressInput;
 
-  //locators for entry menu elements
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By textBox = By.xpath("//span[@class=\"text\" and contains(text(), \"Text Box\")]");
+    @FindBy(id = "submit")
+    private WebElement submitButton;
 
-  //locators for fill text form
-  private final By fullName = By.xpath("//input[@placeholder=\"Full Name\"]");
-  private final By email = By.xpath("//input[@placeholder=\"name@example.com\"]");
-  private final By currentAddress = By.xpath("//textarea[@placeholder=\"Current Address\"]");
-  private final By permanentAddress = By.xpath("//textarea[@id=\"permanentAddress\"]");
-  private final By submitButton = By.xpath("//button[@class=\"btn btn-primary\"]");
+    @FindBy(id = "output")
+    private WebElement output;
 
-  //locator for control enter
-  private final By resultName = By.xpath("//p[@id=\"name\"]");
-  private final By resultEmail = By.xpath("//p[@id=\"email\"]");
-  private final By resultCurrentAddress = By.xpath("//p[@id=\"currentAddress\"]");
-  private final By resultPermanentAddress = By.xpath("//p[@id=\"permanentAddress\"]");
+    public TextBox(WebDriver driver) {
+        super(driver);
+    }
 
-  //setters
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
+    public void fillForm(String userName, String userEmail, String currentAddress, String permanentAddress) {
+        sendKeys(userNameInput, userName);
+        sendKeys(userEmailInput, userEmail);
+        sendKeys(currentAddressInput, currentAddress);
+        sendKeys(permanentAddressInput, permanentAddress);
+        click(submitButton);
+    }
 
-  public void setTextBox() {
-    driver.findElement(textBox).click();
-  }
+    public String getOutputText() {
+        return getText(output);
+    }
 
-  public void setFullName(String username) {
-    driver.findElement(fullName).sendKeys(username);
-  }
+    public void setElementsLocator() {
+        // Use common method
+    }
 
-  public void setEmail(String mail) {
-    driver.findElement(email).sendKeys(mail);
-  }
+    public void setTextBox() {
+        // Use common method
+    }
 
-  public void setCurrentAddress(String address) {
-    driver.findElement(currentAddress).sendKeys(address);
-  }
+    public void setFullName(String fullName) {
+        sendKeys(userNameInput, fullName);
+    }
 
-  public void setPermanentAddress(String address) {
-    driver.findElement(permanentAddress).sendKeys(address);
-  }
+    public void setEmail(String email) {
+        sendKeys(userEmailInput, email);
+    }
 
-  public void setSubmitButton() {
-    driver.findElement(submitButton).click();
-  }
+    public void setCurrentAddress(String address) {
+        sendKeys(currentAddressInput, address);
+    }
 
-  //getters
-  public String getResultName() {
-    return driver.findElement(resultName).getText();
-  }
+    public void setPermanentAddress(String address) {
+        sendKeys(permanentAddressInput, address);
+    }
 
-  public String getResultEmail() {
-    return driver.findElement(resultEmail).getText();
-  }
+    public void setSubmitButton() {
+        click(submitButton);
+    }
 
-  public String getResultCurrentAddress() {
-    return driver.findElement(resultCurrentAddress).getText();
-  }
+    public String getResultEmail() {
+        // Use common method
+        return getText(output);
+    }
 
-  public String getResultPermanentAddress() {
-    return driver.findElement(resultPermanentAddress).getText();
-  }
+    public String getResultPermanentAddress() {
+        // Use common method
+        return getText(output);
+    }
 
+    public String getResultName() {
+        // Use common method
+        return getText(output);
+    }
+
+    public String getResultCurrentAddress() {
+        // Use common method
+        return getText(output);
+    }
 }

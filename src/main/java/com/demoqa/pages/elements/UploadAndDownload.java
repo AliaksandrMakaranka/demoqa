@@ -1,59 +1,34 @@
 package com.demoqa.pages.elements;
 
-import org.openqa.selenium.By;
+import com.demoqa.pages.BasePage;
+import com.demoqa.pages.CommonActions;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
-public class UploadAndDownload {
+public class UploadAndDownload extends CommonActions {
+    @FindBy(id = "uploadFile")
+    private WebElement uploadFile;
 
-  private final WebDriver driver;
+    @FindBy(id = "downloadButton")
+    private WebElement downloadButton;
 
-  public UploadAndDownload(WebDriver driver) {
-    this.driver = driver;
-  }
+    @FindBy(id = "uploadedFilePath")
+    private WebElement uploadedFilePath;
 
+    public UploadAndDownload(WebDriver driver) {
+        super(driver);
+    }
 
-  private final By elementsLocator = By.xpath(
-      "//*[@stroke=\"currentColor\" and @viewBox=\"0 0 448 512\"]");
-  private final By upDownLocator = By.xpath(
-      "//span[@class=\"text\" and contains(text(), \"Upload and Download\")]");// FIXME: 19.02.2023 cant see xpath
+    public void uploadFile(String filePath) {
+        sendKeys(uploadFile, filePath);
+    }
 
-  private final By downloadButton = By.id("downloadButton");
-  private final By uploadFile = By.xpath("//input[@id=\"uploadFile\"]");
-  private final By resultOfUpload = By.xpath("//p[@id=\"uploadedFilePath\"]");
+    public void clickDownloadButton() {
+        click(downloadButton);
+    }
 
-  //setters
-  public String getResultOfUpload() {
-    return driver.findElement(resultOfUpload).getText();
-  }
-
-  public void setElementsLocator() {
-    driver.findElement(elementsLocator).click();
-  }
-
-  public void setDownloadButton() {
-    driver.findElement(downloadButton).click();
-  }
-
-  public void getDownloadButtonMessage() {
-    driver.findElement(downloadButton).getCssValue("innerHTML").toString();
-  }
-
-
-  //getters
-  public WebElement setUploadFile() {
-    return driver.findElement(uploadFile);
-  }
-
-  public WebElement getUpAndDownLoadLocator() {
-    return driver.findElement(upDownLocator);
-  }
-
-  public String getFileName() {
-    return "demo.zip";
-  }
-
-  public String getFilePath() {
-    return "/home/zac/Downloads/";
-  }
+    public String getUploadedFilePath() {
+        return getText(uploadedFilePath);
+    }
 }
